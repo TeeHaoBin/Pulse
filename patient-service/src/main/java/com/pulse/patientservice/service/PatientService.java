@@ -8,7 +8,6 @@ import com.pulse.patientservice.mapper.PatientMapper;
 import com.pulse.patientservice.model.Patient;
 import com.pulse.patientservice.repository.PatientRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.DeleteMapping;
 
 import java.time.LocalDate;
 import java.util.List;
