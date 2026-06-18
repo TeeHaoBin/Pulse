@@ -9,7 +9,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ./patient-service-db:/var/lib/postgresql
+      - patient_db_data:/var/lib/postgresql
     networks:
       - internal
     healthcheck:
@@ -41,3 +41,7 @@ services:
 networks:
   internal:
     driver: bridge
+
+volumes:
+  patient_db_data:
+    name: pulse_patient_db_data
